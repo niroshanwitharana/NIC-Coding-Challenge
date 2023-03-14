@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( 
         <footer>
-          <p> Copyright 2023 nic </p>
+          <p> © National Ice Centre </p>
         </footer>
      );
 }
