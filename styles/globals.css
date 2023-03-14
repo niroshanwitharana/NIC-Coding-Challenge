@@ -61,3 +61,10 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+/* customise css for materialUI */
+.css-1qvr50w-MuiTypography-root{
+color: #008ab8;
+font-weight: 500;
+font-size: 1.2rem;
+}
