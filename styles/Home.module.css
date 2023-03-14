@@ -16,3 +16,9 @@
   color: white;
   text-align: center;
 }
+.card{
+  padding: 10px;
+  display: inline-block;
+  align-items: center;
+ 
+}
