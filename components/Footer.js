@@ -1,7 +1,11 @@
 const Footer = () => {
     return ( 
         <footer>
-          <p> Copyright 2023 nic </p>
+niro/feat/components
+          
+
+          <p> © National Ice Centre </p>
+ niro/feat/initial-setup
         </footer>
      );
 }
