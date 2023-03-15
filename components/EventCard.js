@@ -8,9 +8,23 @@ import IconButton from "@mui/material/IconButton";
 import ShareIcon from "@mui/icons-material/Share";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Button from "@mui/material/Button";
+import { makeStyles } from '@material-ui/styles';
+
+
+const useStyles = makeStyles({
+  header: {
+    // backgroundColor: '', // Customize the background color
+    color: '#5ac1d0 !important', // Customize the text color
+    fontWeight: 550, // Customize the font weight
+    fontSize: '1.1rem !important', // Customize the font size
+  },
+});
 
 const EventCard = ({ event }) => {
+
   const apiKey = process.env.MY_API_KEY;
+
+  const classes = useStyles();
 
   const getDates = (dates) => {
     let dateStr = "";
@@ -26,8 +40,10 @@ const EventCard = ({ event }) => {
     return dateStr;
   };
 
+
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className={classes.header}>  
       <CardHeader
         title={event.name}
         subheader={`Dates : ${event.dates ? getDates(event.dates) : ""}`}

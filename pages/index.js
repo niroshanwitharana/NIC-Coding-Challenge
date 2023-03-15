@@ -35,7 +35,7 @@ const Home = ({ events }) => {
 
       {/* Use module.css for scoped styling */}
       <div className={styles.title}>
-        <h2> Upcoming Events</h2>
+        <h1> Upcoming Events</h1>
         {events && events.map((event, index) => (
           <div key={`${event.name}`} className={styles.card}>
             <EventCard event={event} />
