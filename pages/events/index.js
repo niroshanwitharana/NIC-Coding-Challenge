@@ -36,12 +36,11 @@ const events = ({ events }) => {
       {/* Use module.css for scoped styling */}
       <div className={styles.title}>
         <h2> What's On</h2>
-        {events &&
-          events.map((event, index) => (
-            <div key={`${event.name}`} className={styles.card}>
-              <EventCard event={event} />
-            </div>
-          ))}
+        {events.map((event, index) => (
+          <div key={`${event.name}`} className={styles.card}>
+            <EventCard event={event} />
+          </div>
+        ))}
       </div>
     </>
   );
