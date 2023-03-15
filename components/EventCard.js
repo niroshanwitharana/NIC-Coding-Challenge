@@ -23,6 +23,7 @@ const useStyles = makeStyles({
 const EventCard = ({ event }) => {
 
   const apiKey = process.env.MY_API_KEY;
+  console.log(apiKey);
 
   const classes = useStyles();
 
@@ -65,7 +66,7 @@ const EventCard = ({ event }) => {
           <ShareIcon />
         </IconButton>
         <CardActions>
-          <Link href={`${event.url}?key=${apiKey}`} passHref>
+          <Link href={`${event.url}&api_key=${apiKey}`} passHref>
             <Button size="small">Read More</Button>
           </Link>
         </CardActions>
