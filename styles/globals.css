@@ -64,7 +64,7 @@ footer {
 
 /* customise css for materialUI */
 .css-1qvr50w-MuiTypography-root{
-color: #008ab8;
-font-weight: 500;
-font-size: 1.2rem;
+color: #008ab8 !important;
+font-weight: 550 !important;
+font-size: 1.1rem !important;
 }
