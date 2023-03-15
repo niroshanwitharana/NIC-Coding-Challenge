@@ -20,17 +20,9 @@ const useStyles = makeStyles({
   },
 });
 
-export async function getServerSideProps(context) {
-  const apiKey = 'your_api_key'; // get the api_key from wherever you store it
+const apiKey = process.env.MY_API_KEY;
 
-  return {
-    props: {
-      apiKey,
-    },
-  };
-}
-
-const EventCard = ({ event, apiKey }) => {
+const EventCard = ({ event }) => {
 
   // const apiKey = process.env.MY_API_KEY;
   // console.log(apiKey);
