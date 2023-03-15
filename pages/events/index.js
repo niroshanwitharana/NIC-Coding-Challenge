@@ -3,10 +3,11 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import EventCard from "../../components/EventCard";
 
+const apiKey = process.env.MY_API_KEY;
 export const getStaticProps = async () => {
   // Fetch data from an API
   const res = await fetch(
-    "https://staging.national-ice-centre.com/api/events/read?token=5fda2276-bbc3-4a7f-8c82-f4291abb1cdf"
+    `https://staging.national-ice-centre.com/api/events/read?token=${apiKey}`
   );
   const data = await res.json();
 
